@@ -20,19 +20,85 @@
 body{
     font-family: "Inter", sans-serif;
     color: #fff;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
 /* Shared */
 
 .container{
-
+    margin: 90px 0px;
 }
 
 .btn{
-
+    background-color: rgb(230, 83, 60);
+    border-radius: 30px;
 }
 
 p{
+    color: rgba(255, 255, 255, 0.5);;
+}
+
+/* *********** Nav Bar ************** */
+
+.nav-container{
+    padding: 45px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.menu ul{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 5px 0px;
+}
+
+.menu i{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.menu ul li{
+    list-style-type: none;
+    margin: 0px 5px;
+    padding: 8px 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ****************! Media Query !***************** */
+
+@media (max-width: 576px) {
+    /* for mobiles and small devices */
+    .menu ul{
+        display: none;
+    }
 
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* for tablets */
+    
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* for laptops */
+  
+}
+
 
