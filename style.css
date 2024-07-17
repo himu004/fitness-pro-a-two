@@ -1,0 +1,38 @@
+
+/* Fonts */
+/* Inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Poliwrite  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+/* ********************************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+/* Shared */
+
+.container{
+
+}
+
+.btn{
+
+}
+
+p{
+
+}
+
