@@ -1,4 +1,3 @@
-
 /* Fonts */
 /* Inter */
 
@@ -14,63 +13,160 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 
-body{
+body {
     font-family: "Inter", sans-serif;
     color: #fff;
     max-width: 85%;
     margin: 0 auto;
+    background-color: black;
 }
 
 /* Shared */
 
-.container{
+.container {
     margin: 90px 0px;
 }
 
-.btn{
+.btn {
     background-color: rgb(230, 83, 60);
     border-radius: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
 }
 
-p{
-    color: rgba(255, 255, 255, 0.5);;
+p {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* *********** Nav Bar ************** */
 
-.nav-container{
-    padding: 45px 0px;
+.nav-container {
+    padding: 40px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-style: italic;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2rem;
     padding: 5px 0px;
 }
 
-.menu i{
+.menu i {
     display: none;
 }
 
 
-.menu ul li{
+.menu ul li {
     list-style-type: none;
     margin: 0px 5px;
     padding: 8px 20px;
 }
+
+/* Banner */
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.banner-text h2 {
+    line-height: 80%;
+    font-size: 5rem;
+}
+
+.banner-text h2 span {
+    font-family: "Playwrite CU", cursive;
+    font-weight: 300;
+
+}
+
+.banner-text p {
+    margin-top: 20px;
+}
+
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn-club {
+    padding: 16px 36px;
+    font-size: 1rem;
+}
+
+.btn-download {
+    padding: 16px 36px;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.banner-figure {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.badge{
+    position: absolute;
+    display: flex;
+}
+
+.badge-1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.badge-1 .circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(230, 83, 60);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.badge-1 p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.badge-1 small{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.b-left{
+    margin-top: -150px;
+}
+
+.b-right{
+    margin-top: -450px;
+}
+
+/* ************************************ */
+
 
 
 
@@ -83,28 +179,53 @@ p{
 /* ****************! Media Query !***************** */
 
 @media (max-width: 576px) {
+
     /* for mobiles and small devices */
-    .menu ul{
+    .menu ul {
         display: none;
     }
 
-    .menu i{
+    .menu i {
         display: block;
         color: #fff;
         font-size: 2rem;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-text p {
+        padding-right: 40px;
+    }
+
+    .btn-group{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-club {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        flex-grow: 1;
+    }
+    
+    .btn-download {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        flex-grow: 1;
     }
 
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
     /* for tablets */
-    
+
 
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
     /* for laptops */
-  
+
 }
-
-
