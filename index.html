@@ -131,14 +131,14 @@
             <div class="tutorials-container">
                 <div class="tutorials text">
                     <h3>Available Suggested Tutorials</h3>
-                    <p> 
+                    <p>
                         Running is a popular form of aerobic exercise that involves moving rapidly on foot
                         running is practiced sport and fitness regimen with numerous health benefits.
                     </p>
                 </div>
                 <div class="tutorials-videos">
                     <!-- <video src="https://www.youtube.com/watch?v=6qgjExI3XrE" controls muted loop autoplay></video> -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6qgjExI3XrE?si=kv3XtJqAQtGcNsvi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6qgjExI3XrE?si=kv3XtJqAQtGcNsvi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                 </div>
             </div>
         </section>
@@ -146,73 +146,137 @@
         <!-- __________________________________ -->
         <!-- BMI Calculator Section -->
         <section class="bmi-container">
+
             <div class="bmi-text">
                 <h3>BMI Calculator</h3>
                 <p>
-                    A BMI (Body Mass Index) calculator is a tool used to assess an individual's body weight relative to their height. <br> It's a simple calculation that provides a numerical value,
+                    A BMI (Body Mass Index) calculator is a tool used to assess an individual's body weight relative to
+                    their height. It's a simple calculation that provides a numerical value,
                 </p>
             </div>
             <div class="bmi-content-container">
-               <div class="bmi-wrapper">
+                <div class="bmi-wrapper">
 
-                <div class="bmi-table">
-                    <h3>BMI Calculator Chart</h3>
-                    <table>
-                        <thead>
-                          <tr>
-                            <th>BMI</th>
-                            <th>Weight Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Below 18.5</td>
-                            <td>Underweight</td>
-                          </tr>
-                          <tr>
-                            <td>18.5 - 24.9</td>
-                            <td>Healthy Weight</td>
-                          </tr>
-                          <tr>
-                            <td>25.0 - 29.9</td>
-                            <td>Overweight</td>
-                          </tr>
-                          <tr>
-                            <td>30.0 and Above</td>
-                            <td>Obese</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="bmi-table">
+                        <h3>BMI Calculator Chart</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>BMI</th>
+                                    <th>Weight Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Below 18.5</td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 - 24.9</td>
+                                    <td>Healthy Weight</td>
+                                </tr>
+                                <tr>
+                                    <td>25.0 - 29.9</td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>30.0 and Above</td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bmi-form">
+                        <h3>Calculate your BMI</h3>
+                        <p>
+                            simple way to assess weight status, but it doesn't account for muscle mass or body
+                            composition.
+                        </p>
+                        <form>
+                            <input type="text" placeholder="Height/cm">
+                            <input type="text" placeholder="Weight/kg">
+                            <select name="" id="">
+                                <option class="opt">
+                                    <span>Age</span>
+                                </option>
+                            </select>
+                            <select name="" id="">
+                                <option class="opt">
+                                    <span>Sex</span>
+                                </option>
+                            </select>
+                            <select name="" id="">
+                                <option class="opt">
+                                    <span>Select an activity factor</span>
+                                </option>
+                            </select>
+                        </form>
+                        <button class="btn btn-club">Calculate</button>
+                    </div>
+
                 </div>
+            </div>
+        </section>
+        <!-- _____________________________ -->
 
-                <div class="bmi-form">
-                    <h3>Calculate your BMI</h3>
-                    <p>
-                        simple way to assess weight status, but it doesn't account for muscle mass or body composition.
-                    </p>
-                    <form>
-                        <input type="text" placeholder="Height/cm">
-                        <input type="text" placeholder="Weight/kg">
-                        <select name="" id="" >
-                            <option class="opt">
-                                <span>Age</span>
-                            </option>
-                        </select>
-                        <select name="" id="" >
-                            <option class="opt">
-                                <span>Sex</span>
-                            </option>
-                        </select>
-                        <select name="" id="" >
-                            <option class="opt">
-                                <span>Select an activity factor</span>
-                            </option>
-                        </select>
-                    </form>
-                    <button class="btn btn-club">Calculate</button>
-                </div>
+        <!-- Meet Our Team Section -->
 
-               </div>
+        <section class="container-alignment">
+            <div class="our-team-text">
+                <h3>
+                    Meet Our Team
+                </h3>
+                <p>
+                    Creates and supervises personalized exercise programs, provides guidance and motivation, ensures proper form to prevent injuries, and tracks progress.
+                </p>
+            </div>
+            <div class="our-team-container">
+                
+                    <div class="our-team-figure">
+                        <img src="./images/trainer1.png" alt="">
+                        <div class="credentials">
+                        <h4>Jerom Bell</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+
+                    <div class="our-team-figure">
+                        <img src="./images/trainer2.png" alt="">
+                        <div class="credentials">
+                        <h4>Cameron Williamson</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+                    <div class="our-team-figure">
+                        <img src="./images/trainer3.png" alt="">
+                        <div class="credentials">
+                        <h4>Darrel Steward</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+                    <div class="our-team-figure">
+                        <img src="./images/trainer4.png" alt="">
+                        <div class="credentials">
+                        <h4>Dianne Russel</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+                    <div class="our-team-figure">
+                        <img src="./images/trainer5.png" alt="">
+                        <div class="credentials">
+                        <h4>Cody Fisher</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+                    <div class="our-team-figure">
+                        <img src="./images/trainer1.png" alt="">
+                        <div class="credentials">
+                        <h4>Theresa Webb</h4>
+                        <p>Trainer</p>
+                        </div>
+                    </div>
+          
             </div>
         </section>
 
