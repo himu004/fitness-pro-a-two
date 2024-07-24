@@ -1,11 +1,11 @@
 /* Fonts */
 /* Inter */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
 
 /* Poliwrite  */
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap'); */
 
 /* ********************************* */
 
@@ -267,6 +267,37 @@ p {
 
 /* Tutorials Section */
 
+.tutorials-text h3{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+
+.videos-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.videos-container .r-1{
+    grid-column: span 3;
+}
+.videos-container .r-2{
+    grid-column: span 2;
+}
+.videos-container .r-3{
+    grid-column: span 2;
+}
+.videos-container .r-4{
+    grid-column: span 3;
+}
+
+.videos-container video{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 
 /* ******************* */
@@ -333,8 +364,9 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 30px 0px;
-    gap: 12px;
+    gap: 15px;
 }
+
 form input::placeholder {
     color: #fff;
     padding: 0px 5px;
@@ -404,7 +436,51 @@ form input, select {
     font-weight: 900px;
 }
 
+/* Footer */
 
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container{
+    max-width: 85%;
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.logo-box{
+    grid-column: span 2;
+}
+
+.logo-box h1{
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+}
+
+.content-box h4{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-box p{
+    margin: 10px 0px;
+    font-weight: 200;
+}
+
+hr{
+    max-width: 70%;
+    margin: 0px auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);;
+}
+
+.copyright p{
+    text-align: center;
+    padding: 30px;
+}
 
 
 
@@ -414,6 +490,28 @@ form input, select {
 
 
 /* ****************! Media Query !***************** */
+
+@media (max-width: 320px) {
+    /* Extra small Devices */
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    form :last-child {
+        width: 100%;
+    }
+
+    .btn-group {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
 
 @media (max-width: 576px) {
 
@@ -505,13 +603,13 @@ form input, select {
     }
 
     .bmi-text h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
     }
 
      .bmi-wrapper {
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
     
     }
     
@@ -522,6 +620,14 @@ form input, select {
     
     .bmi-form {
         width: 100%;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    form input, select {
+        padding: 10px;
     }
 
     /* Our Team */
@@ -538,15 +644,165 @@ form input, select {
         padding: 30px 30px;
     }
 
+    /* Footer */
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Video Tutorials Own Section */
+
+    .tutorials-text h3{
+        font-size: 2.5rem;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
     /* for tablets */
+
+    .nav-container{
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-text p {
+        padding-right: 40px;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-club {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        flex-grow: 1;
+    }
+
+    .btn-download {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        flex-grow: 1;
+    }
+
+    /* **** Habits Section **** */
+
+    .habit-cards {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .habit-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .habit-card img {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    /* *** Run Extra Section */
+
+    .run-extra-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 10px;
+        gap: 40px;
+
+    }
+
+    .run-extra-text h3 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .run-extra-text {
+        width: 100%;
+    }
+
+    .run-extra-figure {
+        width: 100%;
+    }
+
+    .btn-run {
+        width: 100%;
+    }
+
+    /* BMI Section */
+    
+    .bmi-text p{
+        padding: 0px 45px;
+    }
+
+    .bmi-text h3 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+     .bmi-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+    
+    
+    .bmi-table {
+        width: 100%;
+    }
+    
+    .bmi-form {
+        width: 100%;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    form input, select {
+        padding: 15px;
+    }
+
+    /* Our Team */
+
+    .our-team-container{
+        grid-template-columns: 1fr;
+    }
+
+    .our-team-figure img{
+        height: 350px;
+        
+    }
+
+    .our-team-text p{
+        padding: 30px 30px;
+    }
+
+    /* Footer */
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
     /* for laptops */
-
+    .habit-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
