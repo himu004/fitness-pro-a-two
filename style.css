@@ -491,7 +491,7 @@ hr{
 
 /* ****************! Media Query !***************** */
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 380px) {
     /* Extra small Devices */
     form {
         width: 100%;
